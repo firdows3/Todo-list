@@ -1,0 +1,377 @@
+/*App.css*/
+.todo-list-container{
+    width:100%;
+    height: 100vh;
+    margin: 0px auto;
+}
+
+/*Header.css*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+.todo-list-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF57E4;
+    padding: 10px 20px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 25px;
+}
+.todo-list-header-left{
+    display: flex;
+    gap: 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+.todo-list-date{
+    font-size: 45px;
+    font-family: 'Neonderthaw', cursive;
+}
+
+/*ToDoList.css*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+.todo-list-body-container{
+    display: flex;
+}
+.todo-list-body, .add-todo-list-body, .todo-list-body-empty, .todo-list-body-empty-with-add-todoList, .todo-list-body-with-add-todoList{
+    margin-top: 5%;
+    font-family: 'Nerko One', cursive;
+    color: #DE78CE;
+    height: 70vh;
+    border-bottom:  .5px solid #c9a9c3;
+    overflow-y: auto;
+    width: 100%;
+}
+.todo-list-body-empty, .todo-list-body-empty-with-add-todoList{
+    text-align: center;
+    font-size: 25px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+/*eachTask.css*/
+.todo-list-each-component{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 500px;
+    margin: 10px auto 0px;
+    font-size: 35px;
+    transition: margin 1s, width 1s;
+}
+.todo-list-listed-component{
+    width: 400px;
+    margin: 20px 20px 0px;
+    display: block;
+}
+.todo-list-hour{
+    font-size: 10px;
+}
+.todo-list-body-left{
+    display: flex;
+    gap: 20px;
+}
+.todo-list-icon{
+    width: 20px;
+    height: 20px;
+}
+.todo-list-complited-task{
+    text-decoration: line-through;
+    margin: 10px 5px;
+    color: #c9a9c3;
+}
+.todo-list-title-link{
+    color: #FF57E4;
+    text-decoration: dotted;
+}
+
+/*EashTaskDescription.css*/
+.todolist-each-component-container{
+    width: 0px;
+    margin: 20px 20px 0px;
+    border-left: 1px solid #c9a9c3;
+    padding: 10px 20px;
+    width: 2800px;
+    transition: margin 1s;
+    height: 550px;
+    overflow-y: auto;
+}
+.todolist-each-component-container-visible{
+    margin: 2% 0px;
+    padding-left: 5%;
+}
+.each-task-top{
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    font-size: 35px;
+    margin: 10px 0px 20px;
+    cursor: pointer;
+}
+.todolist-each-component-title{
+    color: #FF57E4;
+    font-family: 'Nerko One', cursive;
+    border-bottom: 5px solid #FF57E4;
+    padding: 0px 5px;
+}
+.todo-list-input-body{
+    padding: 1.5% 30px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 400px;
+    height: 150px;
+    margin: 5% auto;
+}
+.todolist-title-input, .todolist-description-input{
+    display: block;
+    margin: 10px auto 30px;
+    padding: 8px 12px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #c9a9c3;
+    width: 300px;
+    font-size: 22px;
+    font-family: 'Merriweather', serif;
+}
+.todo-list-add-description{
+    display: flex;
+    gap: 5%;
+    width: 500px;
+}
+.todolist-description-input{
+    margin: 10px;
+    width: 300px;
+    font-size: 15px;
+}
+.todolist-add-task-button, .todo-list-delete-button{
+    border: 1px solid #DE78CE;
+    border-radius: 5px;
+    width: 50px;
+    margin: 10px auto;
+    padding: 5px 10px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    cursor: pointer;
+}
+.description-button{
+    margin: 10px;
+}
+.todo-list-delete-button{
+    margin: 10px;
+    padding: 3px 5px;
+}
+.todo-list-delete{
+    width: 100px;
+    margin: 10px auto;
+}
+.todo-list-delete-message{
+    text-align: center;
+    color: #DE78CE;
+    font-family: 'Itim';
+    width: 400px;
+}
+.todo-list-yes-no-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 2px auto;
+    color: #000;
+    font-size: 10px;
+}
+.todo-list-each-task-items{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 480px;
+    height: 280px;
+    margin: 10px 0px;
+    overflow-y: auto;
+}
+
+/*EachTaskItem.css*/
+.todo-list-edit{
+    width: 400px;
+    margin: 2% 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.todo-list-edit-input{
+    border: 1px solid #c9a9c3;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: none;
+    font-family: 'Merriweather', serif;
+    width: 350px;
+}
+.todo-list-edit-button{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #c9a9c3;
+    padding: 5px 10px;
+  
+}
+.todolist-each-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0px 4%;
+    width: 450px;
+    border-bottom: 1px solid #c9a9c3;
+}
+.todo-list-description-icon{
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+}
+.todolist-each-component-description{
+    font-family: 'Merriweather', serif;
+    width: 250px;
+    overflow-y: auto;
+    margin: 10px 5px;
+}
+
+
+
+.todo-list-footer{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    font-family: 'Merriweather', serif;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.todo-list-footer-right{
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+
+@media(max-width: 1380px){
+    .todolist-each-component-container{
+        width: 2500px;
+    }
+}
+@media(max-width: 1330px){
+    .todolist-each-component-container{
+        width: 2100px;
+    }
+}
+@media(max-width: 1250px){
+    .todolist-each-component-container{
+        width: 1900px;
+    }
+}
+@media(max-width: 1200px){
+    .todolist-each-component-container{
+        width: 1700px;
+    }
+    .todo-list-body, .add-todo-list-body, .todo-list-body-empty, .todo-list-body-empty-with-add-todoList, .todo-list-body-with-add-todoList{
+        height: 75vh;
+    }
+}
+@media(max-width: 1150px){
+    .todolist-each-component-container{
+        width: 1500px;
+    }
+}
+@media(max-width: 1100px){
+    .todolist-each-component-container{
+        width: 1300px;
+    }
+    .todo-list-each-task-items{
+        width: 400px;
+        height: 280px;
+    }
+    .todo-list-add-description{
+        width: 400px;
+    }
+    .each-task-top{
+        width: 400px;
+    }
+    .todolist-each-row{
+        width: 350px;
+    }
+}
+@media(max-width: 1050px){
+    .todolist-each-component-container{
+        width: 1100px;
+    }
+}
+@media(max-width: 990px){
+    .todolist-each-component-container{
+        width: 800px;
+    }
+    .todo-list-listed-component{
+        width: 300px;
+    }
+    .todo-list-each-task-items{
+        width: 380px;
+    }
+    .todo-list-each-component, .todo-list-input-body{
+        width: 300px;
+    } 
+    .todo-list-input-body{
+        width: 320px;
+    }
+}
+@media(max-width: 860px){
+    .todo-list-listed-component{
+        width: 250px;
+    }
+    .todo-list-each-task-items{
+        width: 350px;
+    }
+    .each-task-top{
+        width: 350px;
+    }
+    .todolist-each-row{
+        width: 320px;
+    }
+    .todo-list-body-container{
+        flex-direction: column;
+    }
+    .todo-list-body-empty-with-add-todoList, .todo-list-body-with-add-todoList{
+        height: 200px;
+        border-bottom: 0;
+    }
+    .add-todo-list-body{
+        margin-top: 10px;
+    }
+    .add-todo-list-body{
+        height: 45vh;
+    }
+}
+@media(max-width: 800px){
+    .todo-list-listed-component{
+        display: none;
+        width: 0px;
+    }
+    .todolist-each-component-container{
+        border-left: 0;
+        width: 2200px;
+    }
+    .todo-list-add-description{
+        width: 350px;
+    }
+}
+
+@media(max-width: 770px){
+    .todolist-title-input, .todo-list-each-component{
+        width: 320px;
+    }
+    .todo-list-input-body{
+        margin: 15% auto;
+    }
+}
+@media(max-width: 620px){
+    /* .todo-list-body, .todo-list-body-empty{
+        height: 78vh;
+    } */
+    .todolist-each-component-container-visible{
+        padding-left: 1%;
+    }
+    .todo-list-each-task-items{
+        width: 320px;
+    }
+}
